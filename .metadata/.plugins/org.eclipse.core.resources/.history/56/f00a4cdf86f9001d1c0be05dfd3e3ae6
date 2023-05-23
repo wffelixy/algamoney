@@ -1,0 +1,12 @@
+package com.example.algamoney.api.event;
+
+import org.springframework.context.ApplicationEvent;
+
+public class RecursoCriadoEvent extends ApplicationEvent{
+
+	public RecursoCriadoEvent(Object source) {
+		super(source);
+		
+	}
+
+}
