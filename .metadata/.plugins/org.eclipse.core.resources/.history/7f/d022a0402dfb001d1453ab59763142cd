@@ -1,0 +1,10 @@
+package com.example.algamoney.api.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "lancamento")
+public class Lancamento {
+
+}

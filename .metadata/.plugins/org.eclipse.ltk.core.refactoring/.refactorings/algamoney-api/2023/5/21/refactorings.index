@@ -3,3 +3,9 @@
 1684853396771	Copy file
 1684859758918	Extract method 'adicionarHeaderLocation'
 1684876226204	Extract method 'buscarPessoaPeloCodigo'
+1685038364078	Copy file
+1685042003743	Copy compilation unit
+1685042100270	Copy compilation unit
+1685042171210	Rename field 'categoriaRepository'
+1685042233879	Rename local variable 'categoria'
+1685042254501	Rename local variable 'categoriaSalva'
