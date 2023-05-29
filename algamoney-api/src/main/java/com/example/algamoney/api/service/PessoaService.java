@@ -29,7 +29,7 @@ public class PessoaService {
 		pessoaRepository.save(pessoaSalva);
 	}
 
-	private Pessoa buscarPessoaPeloCodigo(Long codigo) {
+	public Pessoa buscarPessoaPeloCodigo(Long codigo) {
 		Optional<Pessoa> pessoaSalva = pessoaRepository.findById(codigo);
 		if (pessoaSalva == null || pessoaSalva.isEmpty()) {
 			throw new EmptyResultDataAccessException(1);

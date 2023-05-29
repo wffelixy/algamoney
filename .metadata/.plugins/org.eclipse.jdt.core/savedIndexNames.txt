@@ -43,7 +43,6 @@ INDEX VERSION 1.132+C:\AlgaWorks\.metadata\.plugins\org.eclipse.jdt.core
 2134175571.index
 2811432042.index
 4161066034.index
-3057345573.index
 230180606.index
 3140298253.index
 773989795.index
