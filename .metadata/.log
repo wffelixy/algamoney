@@ -4696,3 +4696,944 @@ Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:18:11.493
 !MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:33:35.850
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:33:40.200
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:35:09.008
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:35:10.163
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:35:10.163
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:35:10.172
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:35:10.172
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:35:15.047
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:35:15.047
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:35:54.103
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:35:57.956
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:35:57.956
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:35:57.965
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:35:57.965
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:36:12.445
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:36:12.445
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:36:12.452
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:36:12.452
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:36:15.260
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:36:15.260
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:36:15.268
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:36:15.268
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:37:00.402
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:37:00.402
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:37:00.409
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:37:00.410
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:45:13.482
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:47:17.147
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:47:17.147
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:47:17.155
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:47:17.155
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:47:56.307
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:47:56.307
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:47:56.312
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:47:56.312
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-05-29 18:56:45.012
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:57:44.570
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:57:44.570
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 18:57:44.578
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 18:57:44.578
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:00:36.797
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:00:36.798
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:00:36.806
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:00:36.806
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:00:42.160
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:00:42.160
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:00:42.169
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:00:42.169
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:02:18.989
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:02:18.989
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:02:18.997
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:02:18.997
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:02:31.277
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:02:31.277
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:04:49.148
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:04:49.149
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:04:49.153
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:04:49.154
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:09:48.618
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.addGeneratedSrcFolderTo(GeneratedResourceChangeListener.java:128)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:97)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:496)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:489)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:297)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:160)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:191)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:09:48.618
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2023-05-29 19:09:48.625
+!MESSAGE Failed to add classpath entry for generated source folder test
+!STACK 1
+Java Model Exception: Error in Java Model (code 964): Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3684)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3644)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3700)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.ClasspathUtil.updateProjectClasspath(ClasspathUtil.java:215)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.addToClasspath(GeneratedSourceFolderManager.java:134)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:194)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.ensureFolderExists(GeneratedSourceFolderManager.java:228)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedFileManager.compilationStarted(GeneratedFileManager.java:365)
+	at org.eclipse.jdt.apt.core.internal.AptProject.compilationStarted(AptProject.java:68)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.aboutToBuild(AptCompilationParticipant.java:262)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:632)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2023-05-29 19:09:48.625
+!MESSAGE Cannot nest 'algamoney-api/src/main/java/test' inside 'algamoney-api/src/main/java'. To enable the nesting exclude 'test/' from 'algamoney-api/src/main/java'
