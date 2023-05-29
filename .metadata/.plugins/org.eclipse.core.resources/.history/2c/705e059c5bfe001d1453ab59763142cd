@@ -1,0 +1,22 @@
+package com.example.algamoney.api.repository.lancamento;
+
+import java.util.List;
+
+import com.example.algamoney.api.model.Lancamento;
+import com.example.algamoney.api.repository.filter.LancamentoFilter;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+
+public class LancamentoRepositoryImpl implements LancamentoRepositoryQuery{
+
+	@PersistenceContext
+	private EntityManager manager;
+	
+	@Override
+	public List<Lancamento> filtrar(LancamentoFilter lancamentoFilter) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
