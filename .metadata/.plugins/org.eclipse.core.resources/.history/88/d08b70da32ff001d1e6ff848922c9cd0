@@ -1,0 +1,40 @@
+package com.example.algamoney.api.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+
+@Configuration
+@EnableAuthorizationServer
+public class AuthorizationServerConfig implements OAuth2AuthorizationServerConfigurer {
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @Override
+    public void configure(OAuth2AuthorizationServerConfigurer oauth2) throws Exception {
+        oauth2
+            .tokenAccessDeniedHandler(tokenAccessDeniedHandler())
+            .checkTokenAccess("permitAll()")
+            .authenticationManager(authenticationManager)
+            .clientDetails(clientDetailsService());
+    }
+
+    private ClientDetailsService clientDetailsService() throws Exception {
+        return new InMemoryClientDetailsServiceBuilder()
+            .withClient("client-id")
+            .secret("{noop}client-secret")
+            .authorizedGrantTypes("password", "refresh_token")
+            .scopes("read", "write")
+            .accessTokenValiditySeconds(3600)
+            .refreshTokenValiditySeconds(86400)
+            .build();
+    }
+
+    private AccessDeniedHandler tokenAccessDeniedHandler() {
+        return new OAuth2AccessDeniedHandler();
+    }
+}
+
